@@ -6,6 +6,7 @@ import {NativeModules, NativeAppEventEmitter} from 'react-native';
 import promisify from 'es6-promisify';
 
 const {WeiboAPI} = NativeModules;
+export const isWeiboInstalled = WeiboAPI.isWeiboInstalled
 
 // Used only with promisify. Transform callback to promise result.
 function translateError(err, result) {
